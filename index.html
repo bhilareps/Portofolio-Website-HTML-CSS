@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(10, 10, 69);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(197, 197, 239);
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+        align-items: center;
+      }
+
+      .firstSection > div {
+        width: 40%;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+
+      .leftSection .btn {
+        /* font-size: 2rem; */
+        padding: 12px;
+        background-color: #2e2b70;
+        color: white;
+        border: 2px solid white;     
+        border-radius: 6px;
+        font: 20px;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 50px;
+        margin-right: 25px;
+      }
+
+
+      .rightSection img {
+        width: 80%;
+        /* margin-top: 46px; */
+        border-radius: 5%;
+      }
+
+      .purple {
+        color: rgb(138, 54, 218);
+      }
+
+      #element {
+        color: rgb(138, 54, 218);
+      }
+
+      .secondSection
+      {
+        max-width:80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      main hr
+      {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .secondSection h1
+      {
+        font-size:1.9 rem
+      }
+      .text-grey
+      {
+        color: grey;
+      }
+
+      .secondSection .box
+      {
+        background: white;
+        width: 68vw;
+        height: 2px;
+        margin: 56px 0; 
+        display: flex;
+      }
+
+      .secondSection .vertical
+      {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+
+      .image-top
+      {
+        width:23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+        border-radius: 15%;
+
+      }
+
+      .vertical-title
+      {
+        position: relative;
+        top: 75px;
+        width: 150px;
+
+      }
+      .vertical-desc
+      {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 11px;
+      }
+
+      footer{
+        background-color: rgb(27, 25, 41);
+        /* height: 200px; */
+        
+      }
+      .footer
+      {
+        display: flex;
+        padding: 23px 125px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul
+      {
+        list-style:none;
+
+      }
+
+      /* footer >div{
+        width: 220px;
+      } */
+
+      .footer-second ul li
+      {
+        margin-bottom: 20px;
+      }
+      .logo-img
+      {
+        width:250px;
+        /* justify-content: center; */
+        border-radius: 13%;
+      }
+
+      footer .footer-rights
+      {
+        text-align:center;
+        padding-bottom: 20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Prathamesh's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Prathamesh Bhilare</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <br>
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr>
+      <section class="secondSection">
+        <span class="text-grey">What I have done so for?</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top"src="android.png" alt="">
+                <div class="vertical-title">Android Developer<br>(Dec23-May24)</div>
+                <div class="vertical-desc">
+                    My team and I developed an 'Vartalapam' American Sign Language Detection Android application for our final year project.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top"src="code.png" alt="">
+                <div class="vertical-title">Software Engineer Intern at Barclay's<br>(May23-Jul23)</div>
+                <div class="vertical-desc">
+                    I worked as SWE intern, and utilized SQL and Tableau to develop a comprehensive dashboard for tracking the firm's development cycle. Additionally, I leveraged Perl for file handling, significantly enhancing the company's file management efficiency.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top"src="camera.jpg" alt="">
+                <div class="vertical-title">Photography Head History Club
+                    <br>(Aug22-May23)
+                </div>
+                <div class="vertical-desc">
+                    Led the Photography department of the History Club, capturing memorable moments and preserving the club's events through visually engaging photographs.
+                </div>
+            </div>
+            
+            <div class="vertical">
+                <img class="image-top"src="camera2.jpg" alt="">
+                <div class="vertical-title">Photography Coordinator
+                    <br>(Jan21-Aug22)
+                </div>
+                <div class="vertical-desc">
+                    As Photography Coordinator for the History Club at COEP, I captured and preserved historical events and activities through visuals, documenting heritage walks, tours, lectures, and cultural events.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top"src="finance.jpg" alt="">
+                <div class="vertical-title">Finance  Coordinator
+                    <br>(Sep21-Mar22)
+                </div>
+                <div class="vertical-desc">
+                    As a Finance & Marketing Coordinator, I gained valuable real-world experience in both finance and marketing domains, enhancing my skills and understanding of these fields.
+                </div>
+            </div>
+
+            
+        
+            
+
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3 style="padding-bottom:10px;">Prathamesh's Developer Portfolio</h3>
+                <img class="logo-img" src="logo3.png" alt="">
+                
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Linkdin</li>                   <li>Github</li>
+                    <li>LeetCode</li>
+                    <li>Personal Portfolio</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Made with Love&hearts; | All rights Reserved
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Engineer", "Photographer", "Web Designer","Android Developer"],
+        typeSpeed: 50,
+        loop:true
+      });
+    </script>
+  </body>
+</html>
